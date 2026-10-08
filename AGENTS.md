@@ -72,11 +72,46 @@ All forms must be fully functional and connected to the Prisma/PostgreSQL backen
 - `src/components/modules/`: Isolated feature modules (`calendar/`, `podcast/`, `map/`, `pdf-export/`).
 - `prisma/`: Multi-tenant database schema, seeds, and migrations.
 
-## 8. Guidelines for AI Agents
+## 8. Academic Course Requirements & Milestone Schedule (KTU - Interactive Web Technologies)
+The project must adhere to the specific course grading schedule, required deliverables, and evaluation criteria (Programming Track):
+
+- **Milestone 1: Topic Selection & Registration (by September 28)**
+  - *Weight:* 3% of final grade (Moodle upload only, no defense)
+  - *Deliverables:* Project title & authors, link to system online (if available), project description, analysis of similar systems (2-3 slides), technology selection. (Status: Completed).
+
+- **Milestone 2: Interim Presentation (by November 9)**
+  - *Weight:* 7% of final grade (Moodle upload only, no defense)
+  - *Deliverables:*
+    - Topic selection and registration slides +
+    - System analysis (keywords)
+    - Use case diagram (Roles & permissions)
+    - Database diagram (ERD with relational schema)
+    - Class diagram (TypeScript models & service contracts)
+    - Deployment diagram (Architecture: Client -> Vercel/Next.js -> PostgreSQL/Supabase)
+    - Working application screenshots
+
+- **Milestone 3: Final Presentation (by December 18)**
+  - *Weight:* 25% of final grade (Moodle upload only, no defense)
+  - *Deliverables:*
+    - Interim presentation slides +
+    - Updated screenshots of fully developed modules
+    - System analysis (Mobile friendliness, speed tests / performance benchmarks)
+    - Conclusions & reflections
+    - Work time table (tracked effort & contributions)
+
+- **Milestone 4: Project Files Submission (by January 2)**
+  - *Deliverables:* Complete code repository files submitted to Moodle.
+
+- **Milestone 5: Individual Project Defense & Exam (by January XX)**
+  - *Weight:* 65% of final grade
+  - *Requirements:* Time registration in Moodle, individual code defense. The developer must deeply understand and be able to explain, modify, and justify every line of code.
+
+## 9. Guidelines for AI Agents
 - Always enforce strict TypeScript types (no `any`).
 - Use Server Components for data fetching and Server Actions for form submissions/mutations.
 - Ensure strict tenant isolation: every query/mutation must respect and enforce `newspaperId` / `newspaperSlug` validation.
 - Validate all incoming form inputs using Zod schemas before database insertion.
 - Keep HTML standards strict and clean to ensure compliance with W3C validation.
+- Provide step-by-step code explanations to ensure Anton understands and can defend every single line of code during the final exam (65% weight).
 
 <!-- END:nextjs-agent-rules -->
